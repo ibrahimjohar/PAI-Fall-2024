@@ -3,19 +3,18 @@
 #lab: 01
 #task: 05
 
-array=[]
+a1=[]
 
 for x in range(0,5):
     user_input = int(input("Enter Number: "))
-    array.append(user_input)
+    a1.append(user_input)
 
 num = int(input("Enter a number to remove all numbers lesser than it: "))
 
-for x in array[:]:
+for x in a1[:]:
     if x < num:
-        array.remove(x)
+        a1.remove(x)
 
 print("List after removing numbers less than ", num)
 
-print(array)
-
+print(a1)
