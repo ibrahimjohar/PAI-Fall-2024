@@ -3,12 +3,12 @@
 #lab: 01
 #task: 03
 
-array=[]
+a1=[]
 even_count=0
 
 for x in range(0,5):
     user_input = int (input("Enter Number: "))
-    array.append(user_input)
+    a1.append(user_input)
     if user_input % 2 == 0:
         even_count += 1
 
