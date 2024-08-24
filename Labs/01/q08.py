@@ -3,7 +3,7 @@
 #lab: 01
 #task: 08
 
-for x in range(0,50):
+for x in range(0,51):
     if (x % 3 == 0 and x % 5 ==0):
         print("FizzBuzz")
     elif x % 3 == 0:
