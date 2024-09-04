@@ -8,12 +8,16 @@ def FileReadReplaceProgram(fileName, searchText, replaceText):
         with open(fileName, 'r') as fileObj:
             content = fileObj.read()
 
+        print(f"file content before any changes:\n{content}")
+
         updated_content = content.replace(searchText, replaceText)
 
         with open(fileName, 'w') as fileObj2:
             fileObj2.write(updated_content)
 
         print("replacement done successfully. and the file has been updated")  
+
+        print(f"file content after replacement:\n{updated_content}")
 
     except FileNotFoundError:
         print("the file does not exist/not found.")
