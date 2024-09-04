@@ -1,0 +1,5 @@
+Name: johnson
+CNIC number: 4563790863
+Age: 25
+Salary: 500000
+Contact Number: 92300125498
