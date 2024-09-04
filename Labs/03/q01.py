@@ -1,3 +1,8 @@
+#name: ibrahim johar farooqi
+#date: 4 september 2024
+#lab: 03
+#task: 1
+
 try:
     with open('task1text.txt', 'r') as fileObj:
         content = fileObj.read()
