@@ -10,7 +10,7 @@ class Student:
 
     def display_info(self):
         print(f"student ID: {self.student_id}")
-        print(f"student Name: {self.name}")
+        print(f"student name: {self.name}")
 
 class Marks(Student):
     def __init__(self, student_id, name, marks_algo, marks_dataScience, marks_calculus):
@@ -21,7 +21,7 @@ class Marks(Student):
 
     def display_marks(self):
         print(f"marks in algorithms: {self.marks_algo}")
-        print(f"marks in data Science: {self.marks_dataScience}")
+        print(f"marks in data science: {self.marks_dataScience}")
         print(f"marks in calculus: {self.marks_calculus}")
 
 class Result(Marks):
