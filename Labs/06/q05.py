@@ -22,5 +22,6 @@ my_data = {
 }
 
 data = pd.DataFrame(data=my_data)
+
 print("dimensions: ", data.shape)
 print("columns: ", data.columns)
