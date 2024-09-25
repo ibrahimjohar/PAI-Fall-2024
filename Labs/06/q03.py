@@ -16,5 +16,4 @@ labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
 myIndex = labels
 
 data = pd.DataFrame(data=exam_data, index=myIndex)
-
 print(data)
