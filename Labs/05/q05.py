@@ -1,3 +1,8 @@
+#name: ibrahim johar farooqi
+#date: 18 september 2024
+#lab: 05
+#task: 5
+
 from abc import ABC, abstractmethod
 from datetime import datetime
 
@@ -35,7 +40,7 @@ class Car(Vehicle):
         self.num_doors = num_doors
 
     def display_details(self):
-        print(f"Make: {self.make}, Model: {self.model}, Rental Price: ${self.rental_price}, Number of Doors: {self.num_doors}")
+        print(f"make: {self.make}, model: {self.model}, rental price: ${self.rental_price}, number of doors: {self.num_doors}")
 
 
 class SUV(Vehicle):
@@ -44,7 +49,7 @@ class SUV(Vehicle):
         self.seating_capacity = seating_capacity
 
     def display_details(self):
-        print(f"Make: {self.make}, Model: {self.model}, Rental Price: ${self.rental_price}, Seating Capacity: {self.seating_capacity}")
+        print(f"make: {self.make}, model: {self.model}, rental price: ${self.rental_price}, seating capacity: {self.seating_capacity}")
 
 
 class Truck(Vehicle):
@@ -64,7 +69,7 @@ class RentalReservation:
         self.end_date = end_date
 
     def display_details(self):
-        print(f"Customer: {self.customer.name}, Vehicle: {self.vehicle.make} {self.vehicle.model}, Start Date: {self.start_date}, End Date: {self.end_date}")
+        print(f"customer: {self.customer.name}, vehicle: {self.vehicle.make} {self.vehicle.model}, start date: {self.start_date}, end date: {self.end_date}")
 
 
 class Customer:
@@ -82,31 +87,26 @@ def display_vehicle_details(vehicle):
     vehicle.display_details()
 
 
-def main():
-    car = Car("Toyota", "Corolla", 40, 4)
-    suv = SUV("Honda", "CR-V", 60, 5)
-    truck = Truck("Ford", "F-150", 80, 1000)
+car = Car("Toyota", "Corolla", 40, 4)
+suv = SUV("Honda", "CR-V", 60, 5)
+truck = Truck("Ford", "F-150", 80, 1000)
 
-    customer = Customer("John Doe", "johndoe@example.com")
+customer = Customer("Ibrahim Johar", "ibrahimjohar@gmail.com")
 
-    reservation1 = RentalReservation(customer, car, datetime(2023, 3, 1), datetime(2023, 3, 5))
-    reservation2 = RentalReservation(customer, suv, datetime(2023, 4, 1), datetime(2023, 4, 5))
+reservation1 = RentalReservation(customer, car, datetime(2023, 3, 1), datetime(2023, 3, 5))
+reservation2 = RentalReservation(customer, suv, datetime(2023, 4, 1), datetime(2023, 4, 5))
 
-    customer.rental_history.append(reservation1)
-    customer.rental_history.append(reservation2)
+customer.rental_history.append(reservation1)
+customer.rental_history.append(reservation2)
 
-    print("Vehicle Details:")
-    display_vehicle_details(car)
-    display_vehicle_details(suv)
-    display_vehicle_details(truck)
+print("vehicle details:")
+display_vehicle_details(car)
+display_vehicle_details(suv)
+display_vehicle_details(truck)
 
-    print("\nRental Reservations:")
-    reservation1.display_details()
-    reservation2.display_details()
+print("\nrental reservations:")
+reservation1.display_details()
+reservation2.display_details()
 
-    print("\nCustomer Rental History:")
-    customer.display_rental_history()
-
-
-if __name__ == "__main__":
-    main()
+print("\ncustomer rental history:")
+customer.display_rental_history()
