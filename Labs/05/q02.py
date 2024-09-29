@@ -1,3 +1,8 @@
+#name: ibrahim johar farooqi
+#date: 18 september 2024
+#lab: 05
+#task: 2
+
 from abc import ABC, abstractmethod
 
 class Shape(ABC):
