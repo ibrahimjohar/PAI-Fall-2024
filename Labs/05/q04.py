@@ -1,3 +1,8 @@
+#name: ibrahim johar farooqi
+#date: 18 september 2024
+#lab: 05
+#task: 4
+
 class Student:
     def __init__(self, id, name):
         self.id = id
@@ -32,12 +37,7 @@ class Result(Marks):
         print("Average Marks:", average_marks)
 
 
-def main():
-    result = Result(1, "John Doe", 80, 90, 70)
-    result.display_student_info()
-    result.display_marks()
-    result.calculate_result()
-
-
-if __name__ == "__main__":
-    main()
+result = Result(1, "Ibrahim Johar", 80, 90, 70)
+result.display_student_info()
+result.display_marks()
+result.calculate_result()
