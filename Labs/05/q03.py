@@ -1,3 +1,8 @@
+#name: ibrahim johar farooqi
+#date: 18 september 2024
+#lab: 05
+#task: 3
+
 class Account:
     def __init__(self):
         self.__account_no = None
@@ -17,6 +22,6 @@ class Account:
 
 account = Account()
 
-account.initialize_account("123456789", 1000.0, "1234")
+account.initialize_account("5678945612", 1040.0, "1027")
 
 account.print_account_details()
