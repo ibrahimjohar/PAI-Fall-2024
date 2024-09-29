@@ -1,3 +1,8 @@
+#name: ibrahim johar farooqi
+#date: 18 september 2024
+#lab: 05
+#task: 1
+
 class Vehicle:
     def __init__(self, seating_capacity):
         self.seating_capacity = seating_capacity
