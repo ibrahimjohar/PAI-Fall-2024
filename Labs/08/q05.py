@@ -1,3 +1,8 @@
+#name: ibrahim johar farooqi
+#date: 10 october 2024
+#lab: 07
+#task: 05
+
 import numpy as np
 from numpy import random
 
