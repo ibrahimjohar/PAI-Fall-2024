@@ -1,3 +1,8 @@
+#name: ibrahim johar farooqi
+#date: 10 october 2024
+#lab: 07
+#task: 03
+
 import numpy as np
 
 identity_mat = np.eye(3)
