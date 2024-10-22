@@ -1,0 +1,3 @@
+average: 498.728
+variance: 83216.214016
+standard Deviation: 288.47220666123104
